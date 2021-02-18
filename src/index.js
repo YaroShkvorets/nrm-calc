@@ -101,7 +101,7 @@ function drawChart() {
   var expo = parseInt(exponent.value);
   var delta = parseFloat(powerUp.value);
 
-  var prices = calcPrices(min*10000, max*10000, expo, delta/100);
+  var prices = calcPrices2(min*10000, max*10000, expo, delta/100);
   var data = chartJsData(prices);
   options.title.text = `Fee to reserve ${delta}% of network capacity for 24H`;
   if (window.chart) {
